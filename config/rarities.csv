@@ -1,0 +1,7 @@
+id,color,luck_rank,celebrate
+common,#d5dbe3,0,false
+uncommon,#6ee27a,1,false
+rare,#4aa8ff,2,false
+epic,#c76bff,3,true
+legendary,#ffc233,4,true
+junk,#9a9a9a,0,false

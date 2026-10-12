@@ -1,0 +1,36 @@
+# Random events. One event runs at a time.
+# Display text lives in locales/*.yaml under  event.<id>
+#
+# modifiers (all optional, neutral value in brackets):
+#   bite_time  multiplies the wait for a bite   [1.0]  (lower = faster)
+#   luck       boosts rare fish: weight * (1 + luck * rarity.luck_rank)  [0.0]
+#   value      multiplies coin value of catches [1.0]
+#   junk       multiplies the chance of junk    [1.0]
+# rain: true   draws rain over the widget
+
+schedule:
+  first_delay: [25, 70]    # seconds until the first event after launch
+  interval: [30, 90]       # pause between events
+
+events:
+  frenzy:
+	duration: 30
+	weight: 1
+	color: "#7fe7ff"
+	modifiers: {bite_time: 0.3}
+  lucky:
+	duration: 30
+	weight: 1
+	color: "#ffe36b"
+	modifiers: {luck: 3.0}
+  golden:
+	duration: 30
+	weight: 1
+	color: "#ffb347"
+	modifiers: {value: 2.0}
+  storm:
+	duration: 25
+	weight: 1
+	color: "#9db4ff"
+	rain: true
+	modifiers: {bite_time: 1.6, junk: 2.5}

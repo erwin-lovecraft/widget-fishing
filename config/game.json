@@ -1,0 +1,20 @@
+{
+	"basket_capacity": 25,
+	"autosave_seconds": 15,
+	"ui": { "pixel_scale": 3 },
+	"outcomes": { "fish": 78, "junk": 8, "treasure": 2, "escape": 12 },
+	"timing": {
+		"cast_windup": 0.3,
+		"cast_throw": 0.15,
+		"cast_flight": 0.55,
+		"bite_wait": [4.0, 12.0],
+		"nibble_gap": [1.0, 2.5],
+		"nibble_chance": 0.45,
+		"reel": 0.7,
+		"catch_display": 1.05,
+		"treasure_display": 1.4,
+		"pause_between_casts": [1.0, 2.5]
+	},
+	"size": { "base": [0.7, 1.2], "bonus_max": 0.8, "bonus_power": 4.0 },
+	"treasure": { "coins": [80, 300] }
+}

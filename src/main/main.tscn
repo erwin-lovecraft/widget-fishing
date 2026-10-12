@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://b1o8lgnymtldc"]
+
+[ext_resource type="Script" path="res://src/main/main.gd" id="1_main"]
+[ext_resource type="Script" path="res://src/fishing/fisher.gd" id="2_fisher"]
+[ext_resource type="Texture2D" path="res://assets/Characters/char1_fishingrod_animation_32x32.png" id="3_char"]
+[ext_resource type="Script" path="res://src/fishing/fishing_line.gd" id="4_line"]
+[ext_resource type="Script" path="res://src/fishing/weather_overlay.gd" id="5_weather"]
+[ext_resource type="PackedScene" path="res://src/ui/hud.tscn" id="6_hud"]
+[ext_resource type="Script" path="res://src/ui/effects.gd" id="7_effects"]
+[ext_resource type="Script" path="res://src/fishing/event_manager.gd" id="8_events"]
+[ext_resource type="Script" path="res://src/ui/context_menu.gd" id="9_menu"]
+
+[sub_resource type="StyleBoxFlat" id="pond_style"]
+bg_color = Color(0.16, 0.45, 0.78, 0.5)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7, 0.9, 1, 0.55)
+corner_radius_top_left = 26
+corner_radius_top_right = 26
+corner_radius_bottom_right = 26
+corner_radius_bottom_left = 26
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main")
+
+[node name="Pond" type="Panel" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 100.0
+offset_top = 120.0
+offset_right = 292.0
+offset_bottom = 210.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("pond_style")
+
+[node name="EventManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("8_events")
+
+[node name="FishingLine" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_line")
+
+[node name="Fisher" type="Sprite2D" parent="." node_paths=PackedStringArray("line", "events")]
+unique_name_in_owner = true
+position = Vector2(10, 84)
+scale = Vector2(3, 3)
+texture = ExtResource("3_char")
+centered = false
+flip_h = true
+region_enabled = true
+region_rect = Rect2(64, 32, 32, 32)
+script = ExtResource("2_fisher")
+line = NodePath("../FishingLine")
+events = NodePath("../EventManager")
+
+[node name="Weather" type="Control" parent="." node_paths=PackedStringArray("events")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("5_weather")
+events = NodePath("../EventManager")
+
+[node name="Hud" parent="." instance=ExtResource("6_hud")]
+unique_name_in_owner = true
+
+[node name="Effects" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("7_effects")
+
+[node name="ContextMenu" type="PopupMenu" parent="."]
+unique_name_in_owner = true
+script = ExtResource("9_menu")
+
+[node name="ResetDialog" type="ConfirmationDialog" parent="."]
+unique_name_in_owner = true
+
+[node name="AutosaveTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+autostart = true

@@ -1,0 +1,63 @@
+keys,en,vi
+meta.name,English,Tiếng Việt
+menu.sell,Sell basket ({value} coins),Bán giỏ cá ({value} xu)
+menu.collection,Basket & collection,Giỏ cá & bộ sưu tập
+menu.show_pond,Show pond,Hiện ao nước
+menu.always_on_top,Always on top,Luôn ở trên cùng
+menu.language,Language,Ngôn ngữ
+menu.reset,Reset progress,Xoá tiến trình
+menu.quit,Quit,Thoát
+ui.reset_confirm,Reset all progress?,Xoá toàn bộ tiến trình?
+ui.basket_title,Basket {count}/{capacity}  ({value} coins),Giỏ {count}/{capacity}  ({value} xu)
+ui.sell,Sell,Bán
+ui.close,X,X
+ui.unknown_item,???,???
+ui.collection_row,{chance}%  {value}c  x{count},{chance}%  {value}xu  x{count}
+ui.event_banner,{text} ({seconds}s),{text} ({seconds}s)
+ui.sold,Sold for {amount},Đã bán được {amount}
+ui.basket_full,Basket full! Sold for {amount},Giỏ đầy! Bán được {amount}
+ui.treasure,Treasure!  +{coins} coins,Kho báu!  +{coins} xu
+ui.catch_junk,{name}  +{value},{name}  +{value}
+ui.catch_fish_detail,{rarity}  x{size}  +{value},{rarity}  x{size}  +{value}
+status.casting,Casting...,Đang quăng cần...
+status.waiting,Waiting for a bite...,Chờ cá cắn câu...
+status.bite,Bite!,Cá cắn câu!
+status.reeling,Reeling in...,Đang kéo cần...
+status.caught,Caught {name}!,Câu được {name}!
+status.escaped,It got away...,Cá thoát mất...
+status.treasure,Treasure chest!,Rương kho báu!
+rarity.common,Common,Phổ biến
+rarity.uncommon,Uncommon,Khá hiếm
+rarity.rare,Rare,Hiếm
+rarity.epic,Epic,Sử thi
+rarity.legendary,Legendary,Huyền thoại
+rarity.junk,Junk,Rác
+event.frenzy,Fish Frenzy! Bites come fast,Cá nổi loạn! Cá cắn câu nhanh
+event.lucky,Lucky Charm! Rare fish boosted,May mắn! Dễ ra cá hiếm
+event.golden,Golden Hour! Fish worth x2,Giờ vàng! Cá giá x2
+event.storm,"Storm... slow bites, more junk","Bão... cá cắn chậm, nhiều rác"
+item.grey_minnow,Grey Minnow,Cá Tuế Xám
+item.green_minnow,Green Minnow,Cá Tuế Xanh
+item.blue_minnow,Blue Minnow,Cá Tuế Lam
+item.reed_fish,Reed Fish,Cá Lau
+item.green_bass,Green Bass,Cá Vược Xanh
+item.red_darter,Red Darter,Cá Phi Tiêu Đỏ
+item.shrimp,Shrimp,Tôm
+item.crab,Crab,Cua
+item.starfish,Starfish,Sao Biển
+item.clownfish,Clownfish,Cá Hề
+item.angelfish,Angelfish,Cá Thần Tiên
+item.lobster,Lobster,Tôm Hùm
+item.jellyfish,Jellyfish,Sứa
+item.seahorse,Seahorse,Cá Ngựa
+item.pufferfish,Pufferfish,Cá Nóc
+item.anglerfish,Anglerfish,Cá Cần Câu
+item.octopus,Octopus,Bạch Tuộc
+item.blue_shark,Blue Shark,Cá Mập Xanh
+item.golden_marlin,Golden Marlin,Cá Cờ Vàng
+item.old_bucket,Old Bucket,Xô Cũ
+item.old_boot,Old Boot,Giày Cũ
+item.rusty_anchor,Rusty Anchor,Neo Gỉ
+item.seaweed,Seaweed,Rong Biển
+item.coral_piece,Coral Piece,Mảnh San Hô
+item.message_bottle,Message Bottle,Chai Thư

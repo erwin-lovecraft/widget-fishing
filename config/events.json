@@ -1,0 +1,9 @@
+{
+	"schedule": { "first_delay": [25, 70], "interval": [30, 90] },
+	"events": {
+		"frenzy": { "duration": 30, "weight": 1, "color": "#7fe7ff", "modifiers": { "bite_time": 0.3 } },
+		"lucky": { "duration": 30, "weight": 1, "color": "#ffe36b", "modifiers": { "luck": 3.0 } },
+		"golden": { "duration": 30, "weight": 1, "color": "#ffb347", "modifiers": { "value": 2.0 } },
+		"storm": { "duration": 25, "weight": 1, "color": "#9db4ff", "rain": true, "modifiers": { "bite_time": 1.6, "junk": 2.5 } }
+	}
+}

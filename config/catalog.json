@@ -1,0 +1,6 @@
+{
+	"sheet": "res://assets/Other/FishIcons_n_junk_16x16.png",
+	"cell_size": 16,
+	"basket_icon": [5, 1],
+	"chest_icons": [[1, 1], [4, 1]]
+}
